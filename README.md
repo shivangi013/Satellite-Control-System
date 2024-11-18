@@ -11,7 +11,7 @@ The satellite is modeled as a particle $P$ of mass $𝑚$ moving in the Earth's 
 
 To simplify the analysis, the equations are converted to polar coordinates $(r,θ)$, where $x = r cosθ$ and $y=r sinθ$. Under the influence of external forces, the equations of motion in polar coordinates become:<br>
 
-* Radial motion: $m \dot\dot(r) - mr \dot(θ)^2 +\frac{k}{r^2} = u_1$
+* Radial motion: $m \dot{\dot{r}} - mr \dot(θ)^2 +\frac{k}{r^2} = u_1$
 * Angular motion: $2m \dot(r)\dot(θ) + m r \dot(\dot(θ)) = u_2$
 
 Here, $u_1$ and $u_2$ represent the control inputs provided by radial and tangential thrusters, respectively, and $k$ represents the strength of the central force, such as the gravitational force between the satellite and the Earth.<br>

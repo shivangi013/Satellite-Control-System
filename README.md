@@ -18,11 +18,12 @@ Here, $u_1$ and $u_2$ represent the control inputs provided by radial and tangen
 
 Linearization:<br>
 
-A change of variables is introduced to transform the equations of motion into a system of four first-order nonlinear differential equations in state-space representation. The new variables $x_1$, $x_2$, $x_3$, and $x_4$ relate to the satellite's radial and angular dynamics, while the control inputs u1 and u2 account for external forces.
+A change of variables is introduced to transform the equations of motion into a system of four first-order nonlinear differential equations in state-space representation. The new variables $x_1$, $x_2$, $x_3$, and $x_4$ relate to the satellite's radial and angular dynamics, while the control inputs $u_$1 and $u_2$ account for external forces.
 
-The state-space equations are expressed as:
+The state-space equations are expressed as:<br>
+
 $dx/dt = f(x, u)$, where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.
-Here, f is a vector function with nonlinear components depending on the state x and controls u.
+Here, f is a vector function with nonlinear components depending on the state $x$ and controls $u$.
 
 Linearization
 The nonlinear system is linearized around the equilibrium point (x = 0, u = 0) to simplify analysis. The linearized system takes the form:
@@ -43,3 +44,76 @@ Matrix B represents the control influence: [
 ]
 
 Normalization (σ = 1) simplifies the equations. This linearized form allows for standard control system analysis and design.
+
+
+The state-space equations are expressed as:
+
+𝑑
+𝑥
+𝑑
+𝑡
+=
+𝑓
+(
+𝑥
+,
+𝑢
+)
+,
+𝑥
+(
+𝑡
+)
+∈
+𝑅
+4
+,
+ 
+𝑢
+(
+𝑡
+)
+∈
+𝑅
+2
+dt
+dx
+​
+ =f(x,u),x(t)∈R 
+4
+ ,u(t)∈R 
+2
+ 
+Here, 
+𝑓
+f is a vector function with nonlinear components depending on the state 
+𝑥
+x and controls 
+𝑢
+u.
+
+Linearization
+The nonlinear system is linearized around the equilibrium point (
+𝑥
+=
+0
+,
+𝑢
+=
+0
+x=0,u=0) to simplify analysis. The linearized system takes the form:
+
+𝑑
+𝑥
+𝑑
+𝑡
+=
+𝐴
+𝑥
++
+𝐵
+𝑢
+dt
+dx
+​
+ =Ax+Bu

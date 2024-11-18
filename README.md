@@ -22,12 +22,12 @@ A change of variables is introduced to transform the equations of motion into a 
 
 The state-space equations are expressed as:<br>
 
-$dx/dt = f(x, u)$, where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.
-Here, f is a vector function with nonlinear components depending on the state $x$ and controls $u$.
+$\frac{dx}{dt} = f(x,u)$, where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.
+Here, $f$ is a vector function with nonlinear components depending on the state $x$ and controls $u$.
 
 Linearization
-The nonlinear system is linearized around the equilibrium point (x = 0, u = 0) to simplify analysis. The linearized system takes the form:
-dx/dt = Ax + Bu
+The nonlinear system is linearized around the equilibrium point $(x = 0, u = 0)$ to simplify analysis. The linearized system takes the form:
+$\frac{dx}{dt} = Ax + Bu$
 
 Matrix A represents the system dynamics: [
 0 1 0 0
@@ -46,74 +46,3 @@ Matrix B represents the control influence: [
 Normalization (σ = 1) simplifies the equations. This linearized form allows for standard control system analysis and design.
 
 
-The state-space equations are expressed as:
-
-𝑑
-𝑥
-𝑑
-𝑡
-=
-𝑓
-(
-𝑥
-,
-𝑢
-)
-,
-𝑥
-(
-𝑡
-)
-∈
-𝑅
-4
-,
- 
-𝑢
-(
-𝑡
-)
-∈
-𝑅
-2
-dt
-dx
-​
- =f(x,u),x(t)∈R 
-4
- ,u(t)∈R 
-2
- 
-Here, 
-𝑓
-f is a vector function with nonlinear components depending on the state 
-𝑥
-x and controls 
-𝑢
-u.
-
-Linearization
-The nonlinear system is linearized around the equilibrium point (
-𝑥
-=
-0
-,
-𝑢
-=
-0
-x=0,u=0) to simplify analysis. The linearized system takes the form:
-
-𝑑
-𝑥
-𝑑
-𝑡
-=
-𝐴
-𝑥
-+
-𝐵
-𝑢
-dt
-dx
-​
- =Ax+Bu

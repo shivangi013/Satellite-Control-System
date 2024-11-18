@@ -32,7 +32,8 @@ Now the nonlinear system is linearized around the equilibrium point $(x = 0, u =
 
 $\frac{dx}{dt} = Ax + Bu$<br>
 
-Matrix A represents the system dynamics: 
+Matrix A represents the system dynamics:<br>
+
 A = 
 [ 0   1   0   0  ]
 [ 3ω² 0   0   2ω ]
@@ -40,13 +41,14 @@ A =
 [ 0  -2ω  0   0  ]
 
 
-Matrix B represents the control influence: [
-0 0
-1 0
-0 0
-0 1
-]
+Matrix B represents the control influence:<br>
 
-Normalization (σ = 1) simplifies the equations. This linearized form allows for standard control system analysis and design.
+B = 
+[ 0  0 ]
+[ 1  0 ]
+[ 0  0 ]
+[ 0  1 ]
+
+This linearized form allows for standard control system analysis and design.
 
 

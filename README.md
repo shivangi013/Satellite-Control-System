@@ -22,19 +22,23 @@ A change of variables is introduced to transform the equations of motion into a 
 
 The state-space equations are expressed as:<br>
 
-$\frac{dx}{dt} = f(x,u)$, where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.
-Here, $f$ is a vector function with nonlinear components depending on the state $x$ and controls $u$.
+$\frac{dx}{dt} = f(x,u)$,<br>
 
-Linearization
-The nonlinear system is linearized around the equilibrium point $(x = 0, u = 0)$ to simplify analysis. The linearized system takes the form:
-$\frac{dx}{dt} = Ax + Bu$
+where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.<br>
 
-Matrix A represents the system dynamics: [
-0 1 0 0
-3ω^2 0 0 2ω
-0 0 0 1
-0 -2ω 0 0
-]
+Here, $f$ is a vector function with nonlinear components depending on the state $x$ and controls $u$.<br>
+
+Now the nonlinear system is linearized around the equilibrium point $(x = 0, u = 0)$ to simplify analysis. The linearized system takes the form:<br>
+
+$\frac{dx}{dt} = Ax + Bu$<br>
+
+Matrix A represents the system dynamics: 
+A = 
+[ 0   1   0   0  ]
+[ 3ω² 0   0   2ω ]
+[ 0   0   0   1  ]
+[ 0  -2ω  0   0  ]
+
 
 Matrix B represents the control influence: [
 0 0

@@ -22,7 +22,7 @@ A change of variables is introduced to transform the equations of motion into a 
 
 The state-space equations are expressed as:<br>
 
-$\frac{dx}{dt} = f(x,u)$,<br>
+$$\frac{dx}{dt} = f(x,u)$$,<br>
 
 where $x(t)$ is in $R^4$ and $u(t)$ is in $R^2$.<br>
 
@@ -30,7 +30,7 @@ Here, $f$ is a vector function with nonlinear components depending on the state 
 
 Now the nonlinear system is linearized around the equilibrium point $(x = 0, u = 0)$ to simplify analysis. The linearized system takes the form:<br>
 
-$\frac{dx}{dt} = Ax + Bu$<br>
+$$\frac{dx}{dt} = Ax + Bu$$<br>
 
 Matrix A represents the system dynamics:<br>
 
